@@ -9,6 +9,7 @@
 #include <memory>
 #include <cmath>
 #include <algorithm>
+#include <omp.h>
 
 void addRandomValues(std::vector<std::shared_ptr<Curve>> &curves)
 {
@@ -86,5 +87,12 @@ int main()
     sortCircles(circles);
     printRadiuses(circles);
     sumRadiuses(circles);
+    int sum = 0;
+#pragma omp parallel for reduction(+ : sum)
+    for (size_t i = 0; i < circles.size(); ++i)
+    {
+        sum += circles[i]->getRadius();
+    }
+    std::cout << "Sum of radiuses is " << sum << std::endl;
     return 0;
 }
