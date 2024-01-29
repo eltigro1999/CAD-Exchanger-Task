@@ -23,14 +23,17 @@
             CAD-Exchanger-Task/include/
             CAD-Exchanger-Task/src/
 
-
 7.  **_Split implementation into a library of curves (.dll or .so) and executable which uses API of this library._**
+
     **_.so file can be found in_**
+
         CAD-Exchanger-Task/libs/curves/build/
+
     **_and it is connected to main.cpp and taskSolver class_**
+
 8.  **_Implement computation of the total sum of radii using parallel computations (e.g. OpenMP or Intel
     TBB library)._**
-        ***This task can be found in***
+    **_This task can be found in_**
 
             CAD-Exchanger-Task/src/
 
