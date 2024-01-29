@@ -2,6 +2,8 @@
 #include "curve.h"
 #include "ellipse.h"
 
+#pragma message("circle.h is being included from libcurves.so")
+
 class Circle : public Curve
 {
 public:
