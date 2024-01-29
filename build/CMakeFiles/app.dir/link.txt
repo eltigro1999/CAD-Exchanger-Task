@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/app.dir/main.cpp.o CMakeFiles/app.dir/src/taskSolver.cpp.o -o app  -Wl,-rpath,/home/eltigro/development/c++/3Dtask/build/libs/curves libs/curves/libcurves.so.1.0 
