@@ -11,6 +11,7 @@ Ellipse::Ellipse(const double &xCenter, const double &yCenter, const double &xRa
                                                                                                                m_xRadius(xRadius <= 0 ? 1 : xRadius),
                                                                                                                m_yRadius(yRadius <= 0 ? 1 : yRadius)
 {
+    // if the radius is less or equal to zero then we just set it to a default value which is 1
 }
 
 Ellipse::Ellipse(const Ellipse &ellipse) : Ellipse(ellipse.m_xCenter,

@@ -9,6 +9,7 @@ Helix::Helix(const double &xCenter, const double &yCenter, const double &zCenter
                                                                                                                               m_radius(radius <= 0 ? 1 : radius),
                                                                                                                               m_step(step == 0 ? 1 : step)
 {
+    // if the radius or step are less or equal to zero then we just set them to a default value which is 1
 }
 
 Helix::Helix(const Helix &helix) : Helix(helix.m_xCenter, helix.m_yCenter, helix.m_zCenter, helix.m_radius, helix.m_step) {}
